@@ -28,6 +28,10 @@ body {
     height: 520px;
 }
 
+#footer {
+    height: 200px;
+}
+
 .vertical-center {
     min-height: 100%;
 

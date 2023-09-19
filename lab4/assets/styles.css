@@ -6,6 +6,39 @@
     --accent: #b200ff;
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#navigation-bar {
+    background-color: var(--background);
+}
+
+#hero {
+    background: linear-gradient(
+        rgba(99, 56, 255, 0.1), 
+        rgb(27, 27, 27)
+    ),
+    url(/assets/images/gaming.jpg); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 520px;
+}
+
+.vertical-center {
+    min-height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 a {
     text-decoration: none;
     color: var(--text);

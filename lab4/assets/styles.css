@@ -23,7 +23,7 @@ body {
         rgba(99, 56, 255, 0.1), 
         rgb(27, 27, 27)
     ),
-    url(/assets/images/gaming.jpg); 
+    url("images/gaming.jpg"); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

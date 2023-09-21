@@ -10,6 +10,7 @@ body {
     color: var(--text);
     font-family: 'Poppins', sans-serif;
     background-color: var(--background);
+    -webkit-font-smoothing: antialiased;
 }
 
 #navigation-bar {
@@ -36,7 +37,6 @@ body {
 
 .vertical-center {
     min-height: 100%;
-
     display: flex;
     align-items: center;
 }
@@ -64,4 +64,37 @@ a {
     transform: scale(101%);
     filter:brightness(100%);
     box-shadow: 0px 8px 20px #000;
+}
+
+.glass {
+    position: relative;
+    background: inherit;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 12px 20px #000;
+    z-index: 1;
+}
+
+    .glass:before {
+        content: '';
+        position: absolute;
+        background: inherit; 
+        left: 0;
+        right: 0;
+        top: 0;  
+        bottom: 0;
+        margin: -20px;
+        box-shadow: inset 0 0 0 400px rgba(255,255,255,0.15);
+        filter: blur(20px);
+        z-index: -1;
+    }
+
+    .blurred-box > * {
+        z-index: 2;
+    }
+
+.text-wrapper {
+    max-width: 105ch;
+    margin-left: auto;
+    margin-right: auto;
 }

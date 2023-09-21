@@ -103,3 +103,24 @@ a {
     margin-left: auto;
     margin-right: auto;
 }
+
+.background-container {
+    height: 60vh;
+    width: 100vw;
+    overflow: hidden;
+    border-bottom: thick gray;
+    margin-bottom: .5em;
+}
+
+.background-container .background-image {
+    z-index: -1;
+    position: relative;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 90%;
+}

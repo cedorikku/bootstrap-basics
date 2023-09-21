@@ -32,10 +32,6 @@ body {
     text-align: center;
 }
 
-#footer {
-    height: 200px;
-}
-
 .vertical-center {
     min-height: 100%;
     display: flex;
@@ -123,4 +119,21 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 90%;
+}
+
+
+#footer {
+    height: 120px;
+    user-select: none;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    width: fit-content;
+}
+
+.social-links li {
+    display: inline-block;
+    padding-right: 16px;;
 }

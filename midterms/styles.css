@@ -44,7 +44,7 @@ body {
     transform: scale(1.01);
 }
 .card img { 
-    background-size: cover;
+    object-fit: cover;
     height: 200px;
 }
 .card-footer h3 {

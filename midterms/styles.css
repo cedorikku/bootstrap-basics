@@ -96,6 +96,9 @@ small {
     font-size: 0.8rem;
     font-weight: 500;
 }
+.card-footer p span {
+    font-size: 1rem;
+}
 
 .footer a i {
     color: #eee;

@@ -1,6 +1,6 @@
 :root {
     --text: #ffffff;
-    --background: #121212;
+    --background: #222;
     --primary: #443274;
     --secondary: #555555;
     --accent: #b200ff;
@@ -16,7 +16,7 @@ body {
     background: var(--text);
 }
 .navbar a {
-    color: var(--background);
+    color: black;
     text-transform: uppercase;
     font-weight: 800;
 }
@@ -27,7 +27,7 @@ body {
     padding: 10px;
     margin-bottom: 1rem;
     border-radius: 5px;
-    color: var(--background);
+    color: black;
     background-color: var(--text);
 }
 

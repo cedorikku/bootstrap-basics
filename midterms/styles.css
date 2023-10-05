@@ -65,3 +65,38 @@ body {
     font-size: 0.8rem;
     font-weight: 500;
 }
+
+.footer a i {
+    color: #eee;
+    width: 35px;
+    font-size: x-large;
+    padding-top: 10px;
+    transition: all 0.2s ease;
+}
+
+.footer button {
+    background: #25528b;
+    color: white;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.footer button:hover {
+    background: darkgrey;
+}
+
+.footer input {
+    background: transparent;
+    outline: 2px solid white;
+    color: #ccc;
+}
+
+.footer p {
+    font-size: smaller;
+    padding: 0;
+    margin: 0;
+}
+
+.footer a i:hover {
+    color: #4682A6;
+}

@@ -74,36 +74,47 @@ small {
     color: #999;
 }
 
-.card {
-    transition: all 100ms ease-in-out;
+.main-content .card {
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease-out;
 }
 
-.card:hover {
+.main-content .card:hover {
     cursor: pointer;
-    box-shadow: 0 5px 15px 5px lightgray;
-    transform: scale(1.01);
+    box-shadow: 0 5px 20px 5px lightgray;
 }
 
-.card img {
+.main-content .card-img-top {
+    transition: all 0.3s ease-out;
+}
+
+.main-content .card:hover .card-img-top {
+    position: relative;
+    transform: scale(1.05);
+}
+
+.main-content .card img {
     object-fit: cover;
     height: 200px;
 }
 
-.card-footer {
+.main-content .card-footer {
     background-color: var(--secondary) !important;
     padding: 1rem;
+    z-index: 1;
 }
 
-.card-footer h3 {
+.main-content .card-footer h3 {
     font-size: 1.2rem;
     font-weight: 700;
 }
 
-.card-footer p {
+.main-content .card-footer p {
     font-size: 0.8rem;
     font-weight: 500;
 }
-.card-footer p span {
+.main-content .card-footer p span {
     font-size: 1rem;
 }
 

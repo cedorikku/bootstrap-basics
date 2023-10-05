@@ -23,10 +23,14 @@ small {
 .navbar a {
     margin-bottom: 0;
     color: black;
-    font-family: 'Dela Gothic One', monospace;
     text-transform: uppercase;
-    font-size: 1.45rem;
     font-weight: 400;
+}
+
+.navbar a,
+.footer a {
+    font-family: 'Dela Gothic One', monospace;
+    font-size: 1.45rem;
 }
 
 .main-content .container {

@@ -47,16 +47,17 @@ h5 {
     background-color: var(--text);
 }
 
-.nav-link {
+.main-content .nav-link {
     color: var(--secondary);
+    text-align: start;
 }
 
-.nav-link:hover {
+.main-content .nav-link:hover {
     background-color: gray !important;
     color: var(--text);
 }
 
-.nav-link.active {
+.main-content .nav-link.active {
     background-color: #333 !important;
     color: var(--text);
 }

@@ -12,6 +12,10 @@ body {
     background: var(--background);
 }
 
+small {
+    font-size: 0.8rem;
+}
+
 .navbar {
     background: var(--text);
 }
@@ -19,14 +23,18 @@ body {
 .navbar a {
     margin-bottom: 0;
     color: black;
-    font-family: 'Rubik Mono One', monospace;
+    font-family: 'Dela Gothic One', monospace;
     text-transform: uppercase;
-    font-size: 1.4rem;
+    font-size: 1.45rem;
     font-weight: 400;
 }
 
 .main-content .container {
     overflow: hidden;
+}
+
+h5 {
+    user-select: none;
 }
 
 .laman h5 {

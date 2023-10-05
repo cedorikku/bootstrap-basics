@@ -29,3 +29,26 @@ body {
     color: var(--background);
     background-color: var(--text);
 }
+
+.card {
+    transition: all 200ms ease-in-out;
+}
+.card:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0 2px var(--text);
+    outline: 2px solid var(--text);
+    outline-offset: -5px;
+    transform: scale(1.01);
+}
+.card img { 
+    background-size: cover;
+    height: 200px;
+}
+.card-footer h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.card-footer p {
+    font-size: 0.8rem;
+    font-weight: 500;
+}

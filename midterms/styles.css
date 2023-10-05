@@ -7,6 +7,7 @@
 }
 
 body {
+    font-family: 'Fira Mono', monospace;
     color: var(--text);
     background: var(--background);
 }
@@ -17,4 +18,14 @@ body {
 .navbar a {
     color: var(--background);
     font-weight: 800;
+}
+
+.laman h5 {
+    width: 100%;
+    font-weight: 800;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    color: var(--background);
+    background-color: var(--text);
 }

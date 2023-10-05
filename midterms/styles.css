@@ -15,12 +15,18 @@ body {
 .navbar {
     background: var(--text);
 }
+
 .navbar a {
+    margin-bottom: 0;
     color: black;
     font-family: 'Rubik Mono One', monospace;
     text-transform: uppercase;
     font-size: 1.4rem;
     font-weight: 400;
+}
+
+.main-content .container {
+    overflow: hidden;
 }
 
 .laman h5 {
@@ -36,6 +42,7 @@ body {
 .card {
     transition: all 200ms ease-in-out;
 }
+
 .card:hover {
     cursor: pointer;
     box-shadow: 0 0 0 2px var(--text);
@@ -43,14 +50,17 @@ body {
     outline-offset: -5px;
     transform: scale(1.01);
 }
-.card img { 
+
+.card img {
     object-fit: cover;
     height: 200px;
 }
+
 .card-footer h3 {
     font-size: 1.2rem;
     font-weight: 700;
 }
+
 .card-footer p {
     font-size: 0.8rem;
     font-weight: 500;

@@ -2,7 +2,7 @@
     --text: #ffffff;
     --background: #222;
     --primary: #443274;
-    --secondary: #555555;
+    --secondary: #333;
     --accent: #b200ff;
 }
 
@@ -47,21 +47,38 @@ h5 {
     background-color: var(--text);
 }
 
+.nav-link {
+    color: var(--secondary);
+}
+
+.nav-link:hover {
+    background-color: gray !important;
+    color: var(--text);
+}
+
+.nav-link.active {
+    background-color: #333 !important;
+    color: var(--text);
+}
+
+
 .card {
-    transition: all 200ms ease-in-out;
+    transition: all 100ms ease-in-out;
 }
 
 .card:hover {
     cursor: pointer;
-    box-shadow: 0 0 0 2px var(--text);
-    outline: 2px solid var(--text);
-    outline-offset: -5px;
+    box-shadow: 0 5px 15px 5px #111;
     transform: scale(1.01);
 }
 
 .card img {
     object-fit: cover;
     height: 200px;
+}
+
+.card-footer {
+    background-color: var(--secondary) !important;
 }
 
 .card-footer h3 {

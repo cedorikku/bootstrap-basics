@@ -1,15 +1,16 @@
 :root {
-    --text: #ffffff;
-    --background: #222;
-    --primary: #443274;
+    --text: #fff;
+    --text-secondary: #000;
+    --background: #fff;
+    --primary: #000;
     --secondary: #333;
     --accent: #b200ff;
 }
 
 body {
     font-family: 'Fira Mono', monospace;
-    color: var(--text);
     background: var(--background);
+    color: var(--text);
 }
 
 small {
@@ -17,14 +18,14 @@ small {
 }
 
 .navbar {
-    background: var(--text);
+    background: var(--text-secondary);
 }
 
 .navbar a {
     margin-bottom: 0;
-    color: black;
     text-transform: uppercase;
     font-weight: 400;
+    color: var(--text);
 }
 
 .navbar a,
@@ -41,31 +42,37 @@ small {
     user-select: none;
 }
 
-.laman h5 {
+.menu-tab h5 {
     width: 100%;
+    font-size: 1.6rem;
     font-weight: 800;
-    padding: 10px;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     border-radius: 5px;
-    color: black;
-    background-color: var(--text);
+    color: var(--text-secondary);
+}
+
+.main-content .nav {
+    background-color: var(--text-secondary);
 }
 
 .main-content .nav-link {
-    color: var(--secondary);
+    color: var(--text);
     text-align: start;
 }
 
 .main-content .nav-link:hover {
-    background-color: gray !important;
+    background-color: var(--secondary) !important;
     color: var(--text);
 }
 
 .main-content .nav-link.active {
-    background-color: #333 !important;
-    color: var(--text);
+    background-color: var(--text) !important;
+    color: var(--text-secondary);
 }
 
+.main-content .nav-link.disabled {
+    color: #999;
+}
 
 .card {
     transition: all 100ms ease-in-out;
@@ -73,7 +80,7 @@ small {
 
 .card:hover {
     cursor: pointer;
-    box-shadow: 0 5px 15px 5px #111;
+    box-shadow: 0 5px 15px 5px lightgray;
     transform: scale(1.01);
 }
 

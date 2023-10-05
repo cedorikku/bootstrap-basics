@@ -80,6 +80,7 @@ h5 {
 
 .card-footer {
     background-color: var(--secondary) !important;
+    padding: 1rem;
 }
 
 .card-footer h3 {

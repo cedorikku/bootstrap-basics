@@ -14,6 +14,7 @@ body {
     background-position: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    backdrop-filter: sepia(0.5) blur(4px);
     color: var(--text);
 }
 

@@ -79,7 +79,7 @@ input[type=password]:focus {
 }
 
 #form {
-    background-color: #000;
+    height: 100vh;
 }
 
 #form .btn {
@@ -88,6 +88,10 @@ input[type=password]:focus {
 
 #form a {
     color: var(--text);
+}
+
+#form-card {
+    background-color: #000;
 }
 
 .main-content .container {

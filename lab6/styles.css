@@ -42,6 +42,7 @@ small {
 
 h1 {
     font-family: 'Dela Gothic One', monospace;
+    user-select: none;
 }
 
 label {

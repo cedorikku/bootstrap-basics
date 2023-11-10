@@ -27,15 +27,15 @@ small {
     background: var(--text-secondary);
 }
 
-.navbar a {
+.navbar .navbar-brand {
     margin-bottom: 0;
     text-transform: uppercase;
     font-weight: 400;
     color: var(--text);
 }
 
-.navbar a,
-.footer a {
+.navbar .navbar-brand,
+.footer .navbar-brand {
     font-family: 'Dela Gothic One', monospace;
     font-size: 1.45rem;
 }

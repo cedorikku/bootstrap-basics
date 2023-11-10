@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Fira+Mono:wght@400;500;700&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <!-- STYLING -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Midterms</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a href="#" class="navbar-brand h1">レストラン</a>
+        </div>
+    </nav>
+
+    <section class="main-content mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 p-3">
+                    <div class="nav flex-column nav-pills rounded-2 p-2" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <h5 class="text-center p-2">メニュー</h5>
+                        <button class="nav-link active font-weight-bolder" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-recommend"
+                            type="button" role="tab">おつすめ<div><small>Recommendations</small></div></button>
+                        <button class="nav-link font-weight-bolder" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-all"
+                            type="button" role="tab">すべて<div><small>All items</small></div></button>
+                        <button class="nav-link font-weight-bolder" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-burger"
+                            type="button" role="tab">バーガー<div><small>Burgers</small></div></button>
+                        <button class="nav-link font-weight-bolder" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-sides"
+                            type="button" role="tab">サイド<div><small>Sides</small></div></button>
+                        <button class="nav-link font-weight-bolder disabled" id="v-pills-settings-tab" data-bs-toggle="pill"
+                            type="button" role="tab">飲み物<div><small>Drinks</small></div></button>
+                        <button class="nav-link font-weight-bolder" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-veggies"
+                            type="button" role="tab">野菜<div><small>Veggies</small></div></button>
+                    </div>
+                </div>
+
+                <div class="col-lg-9 p-3 menu-tab">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-recommend" role="tabpanel"
+                            aria-labelledby="v-pills-home-tab">
+                            <h5 class="text-center">おつすめ</h5>
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <img src="images/teriyaki-burger.jpg" class="card-img-top" alt="teriyaki burger">
+                                        <div class="card-footer bg-primary text-light">
+                                            <h3>Teriyaki Burger</h3>
+                                            <p>¥<span>690.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <img src="images/katsu-burger.jpg" class="card-img-top" alt="katsu burger">
+                                        <div class="card-footer bg-primary text-light">
+                                            <h3>Katsu Burger</h3>
+                                            <p>¥<span>600.00</span></p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <img src="images/mushroom-gyoza.jpg" class="card-img-top" alt="shimeji mushroom gyoza">
+                                        <div class="card-footer bg-primary text-light">
+                                            <h3>Shimeji Mushroom Gyoza</h3>
+                                            <p>¥<span>350.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <img src="images/chicken-fillet.jpg" class="card-img-top" alt="chicken fillet">
+                                        <div class="card-footer bg-primary text-light">
+                                            <h3>Chicken Fillet</h3>
+                                            <p>¥<span>420.00</span></p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <img src="images/tempura.jpg" class="card-img-top" alt="fried tempura">
+                                        <div class="card-footer bg-primary text-light">
+                                            <h3>Tempura</h3>
+                                            <p>¥<span>380.00</span></p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <img src="images/grilled-vegetables.jpg" class="card-img-top" alt="grilled vegetables">
+                                        <div class="card-footer bg-primary text-light">
+                                            <h3>Grilled Vegetable Skewers</h3>
+                                            <p>¥<span>320.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-burger" role="tabpanel">
+                            <h5 class="text-center">バーガー</h5>
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <img src="images/classic-burger.jpg" class="card-img-top" alt="classic burger">
+                                        <div class="card-footer bg-primary text-light">
+                                            <h3>Classic Burger</h3>
+                                            <p>¥<span>500.00</span></p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <img src="images/ebi-burger.jpg" class="card-img-top" alt="ebi burger">
+                                        <div class="card-footer bg-primary text-light">
+                                            <h3>Ebi Burger</h3>
+                                            <p>¥<span>580.00</span></p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <img src="images/katsu-burger.jpg" class="card-img-top" alt="katsu burger">
+                                        <div class="card-footer bg-primary text-light">
+                                            <h3>Katsu Burger</h3>
+                                            <p>¥<span>600.00</span></p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <img src="images/teriyaki-burger.jpg" class="card-img-top" alt="teriyaki burger">
+                                        <div class="card-footer bg-primary text-light">
+                                            <h3>Teriyaki Burger</h3>
+                                            <p>¥<span>690.00</span></p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <img src="images/avocado-burger.jpg" class="card-img-top" alt="avocado burger">
+                                        <div class="card-footer bg-primary text-light">
+                                            <h3>Avocado Burger</h3>
+                                            <p>¥<span>600.00</span></p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <img src="images/cheese-burger.jpg" class="card-img-top" alt="cheese burger">
+                                        <div class="card-footer bg-primary text-light">
+                                            <h3>Cheese Burger</h3>
+                                            <p>¥<span>490.00</span></p>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-sides" role="tabpanel">
+                            <h5 class="text-center">サイド</h5>
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <img src="images/tempura.jpg" class="card-img-top" alt="fried tempura">
+                                        <div class="card-footer bg-primary text-light">
+                                            <h3>Tempura</h3>
+                                            <p>¥<span>380.00</span></p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <img src="images/edamame.jpg" class="card-img-top" alt="edamame">
+                                        <div class="card-footer bg-primary text-light">
+                                            <h3>Edamame</h3>
+                                            <p>¥<span>240.00</span></p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <img src="images/fries.jpg" class="card-img-top" alt="classic fries">
+                                        <div class="card-footer bg-primary text-light">
+                                            <h3>Classic Fries</h3>
+                                            <p>¥<span>220.00</span></p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <img src="images/chicken-fillet.jpg" class="card-img-top" alt="chicken fillet">
+                                        <div class="card-footer bg-primary text-light">
+                                            <h3>Chicken Fillet</h3>
+                                            <p>¥<span>420.00</span></p>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-veggies" role="tabpanel">
+                            <h5 class="text-center">野菜</h5>
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <img src="images/hijiki-salad.jpg" class="card-img-top" alt="hijiki salad">
+                                        <div class="card-footer bg-primary text-light">
+                                            <h3>Hijiki Salad</h3>
+                                            <p>¥<span>380.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <img src="images/grilled-vegetables.jpg" class="card-img-top" alt="grilled vegetables">
+                                        <div class="card-footer bg-primary text-light">
+                                            <h3>Grilled Vegetable Skewers</h3>
+                                            <p>¥<span>320.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <img src="images/miso-soup.jpg" class="card-img-top" alt="miso soup with tofu and vegetables">
+                                        <div class="card-footer bg-primary text-light">
+                                            <h3>Miso Soup</h3>
+                                            <p>¥<span>300.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <img src="images/mushroom-gyoza.jpg" class="card-img-top" alt="shimeji mushroom gyoza">
+                                        <div class="card-footer bg-primary text-light">
+                                            <h3>Shimeji Mushroom Gyoza</h3>
+                                            <p>¥<span>350.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Space for ALL -->
+                        <div class="tab-pane fade" id="v-pills-all" role="tabpanel">
+                            <h5 class="text-center">すべて</h5>
+                            <div class="row">
+                                <div class="col-lg-4 col-6">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <img src="images/avocado-burger.jpg" class="card-img-top" alt="avocado burger">
+                                        <div class="card-footer bg-primary text-light">
+                                            <h3>Avocado Burger</h3>
+                                            <p>¥<span>600.00</span></p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <img src="images/cheese-burger.jpg" class="card-img-top" alt="cheese burger">
+                                        <div class="card-footer bg-primary text-light">
+                                            <h3>Cheese Burger</h3>
+                                            <p>¥<span>490.00</span></p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <img src="images/chicken-fillet.jpg" class="card-img-top" alt="chicken fillet">
+                                        <div class="card-footer bg-primary text-light">
+                                            <h3>Chicken Fillet</h3>
+                                            <p>¥<span>420.00</span></p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <img src="images/classic-burger.jpg" class="card-img-top" alt="classic burger">
+                                        <div class="card-footer bg-primary text-light">
+                                            <h3>Classic Burger</h3>
+                                            <p>¥<span>500.00</span></p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <img src="images/fries.jpg" class="card-img-top" alt="classic fries">
+                                        <div class="card-footer bg-primary text-light">
+                                            <h3>Classic Fries</h3>
+                                            <p>¥<span>220.00</span></p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <img src="images/ebi-burger.jpg" class="card-img-top" alt="ebi burger">
+                                        <div class="card-footer bg-primary text-light">
+                                            <h3>Ebi Burger</h3>
+                                            <p>¥<span>580.00</span></p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <img src="images/edamame.jpg" class="card-img-top" alt="edamame">
+                                        <div class="card-footer bg-primary text-light">
+                                            <h3>Edamame</h3>
+                                            <p>¥<span>240.00</span></p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <img src="images/grilled-vegetables.jpg" class="card-img-top" alt="grilled vegetables">
+                                        <div class="card-footer bg-primary text-light">
+                                            <h3>Grilled Vegetable Skewers</h3>
+                                            <p>¥<span>320.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <img src="images/hijiki-salad.jpg" class="card-img-top" alt="hijiki salad">
+                                        <div class="card-footer bg-primary text-light">
+                                            <h3>Hijiki Salad</h3>
+                                            <p>¥<span>380.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <img src="images/katsu-burger.jpg" class="card-img-top" alt="katsu burger">
+                                        <div class="card-footer bg-primary text-light">
+                                            <h3>Katsu Burger</h3>
+                                            <p>¥<span>600.00</span></p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <img src="images/miso-soup.jpg" class="card-img-top" alt="miso soup with tofu and vegetables">
+                                        <div class="card-footer bg-primary text-light">
+                                            <h3>Miso Soup</h3>
+                                            <p>¥<span>300.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <img src="images/mushroom-gyoza.jpg" class="card-img-top" alt="shimeji mushroom gyoza">
+                                        <div class="card-footer bg-primary text-light">
+                                            <h3>Shimeji Mushroom Gyoza</h3>
+                                            <p>¥<span>350.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <img src="images/tempura.jpg" class="card-img-top" alt="fried tempura">
+                                        <div class="card-footer bg-primary text-light">
+                                            <h3>Tempura</h3>
+                                            <p>¥<span>380.00</span></p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="card mb-3" style="max-width: 18rem;">
+                                        <img src="images/teriyaki-burger.jpg" class="card-img-top" alt="teriyaki burger">
+                                        <div class="card-footer bg-primary text-light">
+                                            <h3>Teriyaki Burger</h3>
+                                            <p>¥<span>690.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="footer bg-black text-light pb-4 mt-5">
+        <hr style="background-color: #ccc;">
+        <div class="container px-5">
+            <div class="row py-5 g-2">
+                <div class="col-lg-4 pt-2">
+                    <a href="#" class="navbar-brand h1">レストラン</a>
+                    <div class="text-light py-2">
+                        <p>Cedric Villanueva 2023 | Bootstrap 5</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/cedorikku" target="_blank"><i class="fa fa-github"></i></a>
+                        <a href="https://linkedin.com/in/cedorikku" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 pt-2">
+                    <h5>Customer Support</h5>
+                    <p>24/7 Active</p>
+                    <p>Reliable</p>
+                    <p>Always Care</p>
+                </div>
+                <div class="col-lg-4 pt-2">
+                    <h5>About</h5>
+                    <p>This actually isn't a real restaurant</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a4d1366482.js" crossorigin="anonymous"></script>
+</body>
+</html>

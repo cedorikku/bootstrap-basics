@@ -1,3 +1,9 @@
 body {
     background-color: rgba(52, 53, 65, 1);
 }
+
+.page-heading {
+    color: #fff; 
+    font-weight: 700; 
+    font-family: 'Space Mono', monospace;
+}
